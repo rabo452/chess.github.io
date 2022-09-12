@@ -1,0 +1,159 @@
+body, html, #app {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.chess-parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.chess-board-box {
+    width: calc((60px * 9) + 10px);
+    height: calc(60px * 9);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chess-board {
+    width: calc(60px * 8);
+    height: calc(60px * 8);
+    border: 2px solid black;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column-rows-count {
+    width: calc(60px * 1);
+    height: calc(60px * 8);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-rows-letters {
+    width: calc(60px * 9);
+    padding: 0;
+    padding-left: 60px;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 3em;
+}
+
+.black {
+    background: grey;
+}
+
+.white {
+    background: white;
+}
+
+ .square-text {
+    color: black;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.selected {
+    outline: .5px solid black;
+}
+
+.beaten-field.white {
+    background: rgb(0, 255, 106);
+}
+
+.beaten-field.black {
+    background: rgb(1, 145, 28);
+}
+
+.captured {
+    background: red;
+}
+
+.figure-selected {
+    background: rgb(220, 151, 23);
+}
+
+/* figures classes */
+
+.white-rook::after {
+    content: '♖';
+}
+
+.white-elephant::after {
+    content: '♗';
+}
+
+.white-knight::after {
+    content: '♘';
+}
+
+.white-pawn::after {
+    content: '♙';
+}
+
+.white-queen::after {
+    content: '♕';
+}
+
+.white-king::after {
+    content: '♔';
+}
+
+
+
+.black-king::after {
+    content: '♚';
+}
+
+.black-queen::after {
+    content: '♛';
+}
+
+.black-rook::after {
+    content: '♜';
+}
+
+.black-elephant::after {
+    content: '♝';
+}
+
+.black-knight::after {
+    content: '♞';
+}
+
+.black-pawn::after {
+    content: '♟︎'
+}
